@@ -143,11 +143,6 @@ export const ChipStatusContainer = styled('button', {
     },
   },
 
-  // svg: {
-  //   width: '$4',
-  //   height: '$4',
-  // },
-
   defaultVariants: {
     colorScheme: 'default',
   },

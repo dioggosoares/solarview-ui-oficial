@@ -12,7 +12,7 @@ export const TextAreaContainer = styled('div', {
   padding: '$3 $4',
   borderRadius: '$xs',
   boxSizing: 'border-box',
-  border: '2px solid $neutralMedium',
+  border: '0.063rem solid $neutralMedium',
 
   display: 'flex',
   minHeight: '12.188rem',
@@ -26,7 +26,7 @@ export const TextAreaContainer = styled('div', {
   variants: {
     mode: {
       light: {
-        border: '2px solid $neutralMedium',
+        border: '0.063rem solid $neutralMedium',
 
         '&:has(textarea:focus)': {
           borderColor: '$primaryMedium',
@@ -80,7 +80,7 @@ export const TextAreaContainer = styled('div', {
         },
       },
       dark: {
-        border: '2px solid $neutralDark',
+        border: '0.063rem solid $neutralDark',
 
         textarea: {
           color: '$neutralLight',
@@ -125,7 +125,7 @@ export const TextAreaContainer = styled('div', {
         '&:has(textarea:disabled)': {
           opacity: 0.5,
           cursor: 'not-allowed',
-          border: '2px solid $neutralExtraLight',
+          border: '0.063rem solid $neutralExtraLight',
           backgroundColor: '$neutralDark',
         },
 
