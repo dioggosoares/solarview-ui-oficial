@@ -15,4 +15,8 @@ export const TabContainerRoot = styled(Tabs.Root, {
       },
     },
   },
+
+  defaultVariants: {
+    orientation: 'horizontal',
+  },
 })

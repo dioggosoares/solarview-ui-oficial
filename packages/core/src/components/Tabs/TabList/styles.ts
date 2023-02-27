@@ -17,4 +17,8 @@ export const TabListContainer = styled(Tabs.List, {
       },
     },
   },
+
+  defaultVariants: {
+    orientation: 'horizontal',
+  },
 })
