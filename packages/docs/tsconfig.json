@@ -1,0 +1,4 @@
+{
+  "extends": "@solarview-ui/ts-config/react.json",
+  "include": ["src"],
+}

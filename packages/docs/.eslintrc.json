@@ -1,0 +1,3 @@
+{
+  "extends": "@solarview-ui/eslint-config"
+}
