@@ -3,9 +3,11 @@ import { styled } from '../../styles'
 
 export const ModalContainerRoot = styled(Dialog.Root, {})
 
-export const ModalTrigger = styled(Dialog.Trigger, {})
-
 export const ModalPortal = styled(Dialog.Portal, {})
+
+export const ModalTrigger = styled(Dialog.Trigger, {
+  all: 'unset',
+})
 
 export const ModalHeader = styled('div', {
   display: 'flex',
@@ -22,6 +24,8 @@ export const ModalTitle = styled(Dialog.Title, {
 })
 
 export const ModalClose = styled(Dialog.Close, {
+  all: 'unset',
+  cursor: 'pointer',
   display: 'flex',
   padding: '$2',
 
@@ -228,5 +232,6 @@ export const ModalContent = styled(Dialog.Content, {
   defaultVariants: {
     variant: 'primary',
     borderStyle: 'rounded',
+    size: 'md',
   },
 })
