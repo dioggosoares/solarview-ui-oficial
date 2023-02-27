@@ -15,7 +15,9 @@ export const ContainerTrigger = styled('div', {
 })
 
 export const Trigger = styled('button', {
+  all: 'unset',
   padding: '$7 $4 0 $4',
+  cursor: 'pointer',
 })
 
 export const SidebarContainer = styled('div', {

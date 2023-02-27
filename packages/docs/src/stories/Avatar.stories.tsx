@@ -6,6 +6,7 @@ export default {
   component: Avatar,
   args: {
     colorScheme: 'primary',
+    typeData: 'image',
   },
   argTypes: {
     colorScheme: {
@@ -45,5 +46,12 @@ export const FallBack: StoryObj<AvatarProps> = {
 export const WithImage: StoryObj<AvatarProps> = {
   args: {
     src: 'https://api-v2.solarview.com.br/storage/images/logos/sma.png',
+  },
+}
+
+export const WithText: StoryObj<AvatarProps> = {
+  args: {
+    typeData: 'text',
+    children: '10',
   },
 }

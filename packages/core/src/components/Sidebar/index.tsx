@@ -12,14 +12,12 @@ export interface SidebarProps
   extends Omit<ComponentProps<typeof SidebarContainer>, 'open'> {
   as?: ElementType
   children?: ReactNode
-  content?: ReactNode | string
   defaultOpen?: boolean
   open?: ComponentProps<typeof SidebarContainer>['open']
   onOpenChange?: (open: boolean) => void
 }
 
 export function Sidebar({
-  content,
   defaultOpen = false,
   open = false,
   onOpenChange,
