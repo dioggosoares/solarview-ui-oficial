@@ -31,11 +31,6 @@ export const ModalClose = styled(Dialog.Close, {
   },
 })
 
-export const ModalFooter = styled('div', {
-  display: 'flex',
-  width: '100%',
-})
-
 export const ModalOverlay = styled(Dialog.Overlay, {
   position: 'fixed',
   width: '100vw',

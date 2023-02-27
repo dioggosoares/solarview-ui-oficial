@@ -8,7 +8,6 @@ import {
   ModalHeader,
   ModalClose,
   ModalTitle,
-  ModalFooter,
 } from './styles'
 
 export interface ModalProps extends ComponentProps<typeof ModalContainerRoot> {
@@ -73,7 +72,6 @@ export function Modal({
             </ModalHeader>
           )}
           {content}
-          {hasFooter && <ModalFooter>{contentFooter}</ModalFooter>}
         </ModalContent>
       </ModalPortal>
     </ModalContainerRoot>
