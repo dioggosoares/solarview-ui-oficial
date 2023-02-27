@@ -37,15 +37,15 @@ export const SidebarContainer = styled('div', {
         transition: 'width 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
 
         '@media(max-width: 1366px)': {
-          width: '340px',
+          width: '21.25rem',
         },
 
         '@media(max-width: 1440px)': {
-          width: '340px',
+          width: '21.25rem',
         },
 
         '@media(max-width: 1024px)': {
-          width: '370px',
+          width: '23.125rem',
         },
       },
 
