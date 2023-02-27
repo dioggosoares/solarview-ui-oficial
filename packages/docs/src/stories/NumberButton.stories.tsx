@@ -12,7 +12,7 @@ export default {
   args: {
     children: '1',
     variant: 'primary',
-    disabled: false,
+    active: true,
   },
   argTypes: {
     variant: {
@@ -21,7 +21,7 @@ export default {
         type: 'inline-radio',
       },
     },
-    disabled: {
+    active: {
       control: {
         type: 'boolean',
       },
