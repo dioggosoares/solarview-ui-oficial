@@ -31,7 +31,7 @@ export const ModalClose = styled(Dialog.Close, {
   },
 })
 
-export const ModalFooter = styled('section', {
+export const ModalFooter = styled('div', {
   display: 'flex',
   width: '100%',
 })
