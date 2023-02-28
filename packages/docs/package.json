@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@primittive/eslint-config": "^1.0.5",
-    "@solarview-ui/core": "^0.1.5",
+    "@solarview-ui/core": "^0.1.8",
     "@solarview-ui/tokens": "^0.1.0",
     "@storybook/addon-a11y": "^6.5.12",
     "eslint": "^8.34.0",
