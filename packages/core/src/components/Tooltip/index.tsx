@@ -22,7 +22,7 @@ export function ToolTip({
   open,
   defaultOpen = false,
   onOpenChange,
-  withArrow = false,
+  withArrow = true,
   sizeArrow = {
     width: 10,
     height: 5,

@@ -103,7 +103,7 @@ export const Button = styled('button', {
 
         '&:focus': {
           outlineWidth: 0,
-          borderBottom: '.0938rem solid $neutralPure',
+          borderBottom: '0.063rem solid $neutralMedium',
 
           transition: '0.2s ease-linear',
           transitionDelay: '150ms',
@@ -220,6 +220,282 @@ export const Button = styled('button', {
       lg: {
         height: 48,
         fontSize: '$lg',
+      },
+    },
+
+    textColor: {
+      white: {
+        color: '$white !important',
+        svg: {
+          color: '$white !important',
+        },
+      },
+      black: {
+        color: '$black !important',
+        svg: {
+          color: '$black !important',
+        },
+      },
+      neutralPure: {
+        color: '$neutralPure !important',
+        svg: {
+          color: '$neutralPure !important',
+        },
+      },
+      neutralDark: {
+        color: '$neutralDark !important',
+        svg: {
+          color: '$neutralDark !important',
+        },
+      },
+      neutralMedium: {
+        color: '$neutralMedium !important',
+        svg: {
+          color: '$neutralMedium !important',
+        },
+      },
+      neutralLight: {
+        color: '$neutralLight !important',
+        svg: {
+          color: '$neutralLight !important',
+        },
+      },
+      neutralExtraLight: {
+        color: '$neutralExtraLight !important',
+        svg: {
+          color: '$neutralExtraLight !important',
+        },
+      },
+      backgroundDark: {
+        color: '$backgroundDark !important',
+        svg: {
+          color: '$backgroundDark !important',
+        },
+      },
+      backgroundLight: {
+        color: '$backgroundLight !important',
+        svg: {
+          color: '$backgroundLight !important',
+        },
+      },
+      backgroundGray: {
+        color: '$backgroundGray !important',
+        svg: {
+          color: '$backgroundGray !important',
+        },
+      },
+      primaryPure: {
+        color: '$primaryPure !important',
+        svg: {
+          color: '$primaryPure !important',
+        },
+      },
+      primaryPureAlpha: {
+        color: '$primaryPureAlpha !important',
+        svg: {
+          color: '$primaryPureAlpha !important',
+        },
+      },
+      primaryMedium: {
+        color: '$primaryMedium !important',
+        svg: {
+          color: '$primaryMedium !important',
+        },
+      },
+      primaryDark: {
+        color: '$primaryDark !important',
+        svg: {
+          color: '$primaryDark !important',
+        },
+      },
+      primaryLight: {
+        color: '$primaryLight !important',
+        svg: {
+          color: '$primaryLight !important',
+        },
+      },
+      primaryExtraLight: {
+        color: '$primaryExtraLight !important',
+        svg: {
+          color: '$primaryExtraLight !important',
+        },
+      },
+      secondaryPure: {
+        color: '$secondaryPure !important',
+        svg: {
+          color: '$secondaryPure !important',
+        },
+      },
+      secondaryMedium: {
+        color: '$secondaryMedium !important',
+        svg: {
+          color: '$secondaryMedium !important',
+        },
+      },
+      secondaryLight: {
+        color: '$secondaryLight !important',
+        svg: {
+          color: '$secondaryLight !important',
+        },
+      },
+      feedbackDanger: {
+        color: '$feedbackDanger !important',
+        svg: {
+          color: '$feedbackDanger !important',
+        },
+      },
+      feedbackSuccess: {
+        color: '$feedbackSuccess !important',
+        svg: {
+          color: '$feedbackSuccess !important',
+        },
+      },
+      feedbackInfo: {
+        color: '$feedbackInfo !important',
+        svg: {
+          color: '$feedbackInfo !important',
+        },
+      },
+      feedbackWarning: {
+        color: '$feedbackWarning !important',
+        svg: {
+          color: '$feedbackWarning !important',
+        },
+      },
+      feedbackAlert: {
+        color: '$feedbackAlert !important',
+        svg: {
+          color: '$feedbackAlert !important',
+        },
+      },
+      feedbackDangerLight: {
+        color: '$feedbackDangerLight !important',
+        svg: {
+          color: '$feedbackDangerLight !important',
+        },
+      },
+      feedbackSuccessLight: {
+        color: '$feedbackSuccessLight !important',
+        svg: {
+          color: '$feedbackSuccessLight !important',
+        },
+      },
+      feedbackInfoLight: {
+        color: '$feedbackInfoLight !important',
+        svg: {
+          color: '$feedbackInfoLight !important',
+        },
+      },
+      feedbackWarningLight: {
+        color: '$feedbackWarningLight !important',
+        svg: {
+          color: '$feedbackWarningLight !important',
+        },
+      },
+      feedbackAlertLight: {
+        color: '$feedbackAlertLight !important',
+        svg: {
+          color: '$feedbackAlertLight !important',
+        },
+      },
+      feedbackInfoText: {
+        color: '$feedbackInfoText !important',
+        svg: {
+          color: '$feedbackInfoText !important',
+        },
+      },
+    },
+
+    bgColor: {
+      white: {
+        background: '$white !important',
+      },
+      black: {
+        background: '$black !important',
+      },
+      neutralPure: {
+        background: '$neutralPure !important',
+      },
+      neutralDark: {
+        background: '$neutralDark !important',
+      },
+      neutralMedium: {
+        background: '$neutralMedium !important',
+      },
+      neutralLight: {
+        background: '$neutralLight !important',
+      },
+      neutralExtraLight: {
+        background: '$neutralExtraLight !important',
+      },
+      backgroundDark: {
+        background: '$backgroundDark !important',
+      },
+      backgroundLight: {
+        background: '$backgroundLight !important',
+      },
+      backgroundGray: {
+        background: '$backgroundGray !important',
+      },
+      primaryPure: {
+        background: '$primaryPure !important',
+      },
+      primaryPureAlpha: {
+        background: '$primaryPureAlpha !important',
+      },
+      primaryMedium: {
+        background: '$primaryMedium !important',
+      },
+      primaryDark: {
+        background: '$primaryDark !important',
+      },
+      primaryLight: {
+        background: '$primaryLight !important',
+      },
+      primaryExtraLight: {
+        background: '$primaryExtraLight !important',
+      },
+      secondaryPure: {
+        background: '$secondaryPure !important',
+      },
+      secondaryMedium: {
+        background: '$secondaryMedium !important',
+      },
+      secondaryLight: {
+        background: '$secondaryLight !important',
+      },
+      feedbackDanger: {
+        background: '$feedbackDanger !important',
+      },
+      feedbackSuccess: {
+        background: '$feedbackSuccess !important',
+      },
+      feedbackInfo: {
+        background: '$feedbackInfo !important',
+      },
+      feedbackWarning: {
+        background: '$feedbackWarning !important',
+      },
+      feedbackAlert: {
+        background: '$feedbackAlert !important',
+      },
+      feedbackDangerLight: {
+        background: '$feedbackDangerLight !important',
+      },
+      feedbackSuccessLight: {
+        background: '$feedbackSuccessLight !important',
+      },
+      feedbackInfoLight: {
+        background: '$feedbackInfoLight !important',
+      },
+      feedbackWarningLight: {
+        background: '$feedbackWarningLight !important',
+      },
+      feedbackAlertLight: {
+        background: '$feedbackAlertLight !important',
+      },
+      feedbackInfoText: {
+        background: '$feedbackInfoText !important',
       },
     },
 

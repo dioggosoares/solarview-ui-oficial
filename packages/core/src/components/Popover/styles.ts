@@ -9,20 +9,31 @@ export const PopoverAnchor = styled(Popover.Anchor, {})
 
 export const PopoverPortal = styled(Popover.Portal, {})
 
-export const PopoverClose = styled(Popover.Close, {})
+export const PopoverClose = styled(Popover.Close, {
+  all: 'unset',
+  cursor: 'pointer',
+  display: 'flex',
+  padding: '$2',
+
+  svg: {
+    width: '$4',
+    height: '$4',
+  },
+})
 
 export const PopoverArrow = styled(Popover.Arrow, {
-  fill: '$backgroundLight',
+  fill: '$white',
 })
 
 export const PopoverContent = styled(Popover.Content, {
   display: 'flex',
-  padding: '$4',
+  padding: '$1 0',
+  margin: '0 $2 0 0',
 
   variants: {
     variant: {
       primary: {
-        background: '$backgroundLight',
+        background: '$white',
         boxShadow: '0 0.125rem 0.25rem rgba(69, 69, 69, 0.25)',
 
         p: {
@@ -163,6 +174,6 @@ export const PopoverContent = styled(Popover.Content, {
 
   defaultVariants: {
     variant: 'primary',
-    borderStyle: 'rounded',
+    borderStyle: 'pointed',
   },
 })
