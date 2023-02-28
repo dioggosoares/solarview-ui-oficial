@@ -3,7 +3,6 @@ import {
   PopoverRoot,
   PopoverContent,
   PopoverTrigger,
-  PopoverAnchor,
   PopoverPortal,
   PopoverClose,
   PopoverArrow,
@@ -17,6 +16,10 @@ export interface PopoverProps extends ComponentProps<typeof PopoverContent> {
   open?: boolean
   onOpenChange?: (open: boolean) => void
   withArrow?: boolean
+  sizeArrow?: {
+    width?: number
+    height?: number
+  }
 }
 
 export function Popover({
@@ -26,15 +29,26 @@ export function Popover({
   defaultOpen = false,
   onOpenChange,
   withArrow = false,
+  sizeArrow = {
+    width: 10,
+    height: 5,
+  },
   ...props
 }: PopoverProps) {
   return (
-    <PopoverRoot>
+    <PopoverRoot
+      open={open}
+      defaultOpen={defaultOpen}
+      onOpenChange={onOpenChange}
+    >
       <PopoverTrigger {...props}>{children}</PopoverTrigger>
-      <PopoverAnchor />
 
       <PopoverPortal>
-        <PopoverContent>
+        <PopoverContent {...props}>
+          {content}
+          {withArrow && (
+            <PopoverArrow width={sizeArrow.width} height={sizeArrow.height} />
+          )}
           <PopoverClose />
           <PopoverArrow />
         </PopoverContent>
