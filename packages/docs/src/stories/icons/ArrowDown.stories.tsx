@@ -7,45 +7,7 @@ export default {
   args: {
     size: 32,
   },
-  argTypes: {
-    color: {
-      options: [
-        'white',
-        'black',
-        'neutralPure',
-        'neutralDark',
-        'neutralMedium',
-        'neutralLight',
-        'neutralExtraLight',
-        'backgroundDark',
-        'backgroundLight',
-        'backgroundGray',
-        'primaryPure',
-        'primaryPureAlpha',
-        'primaryMedium',
-        'primaryDark',
-        'primaryLight',
-        'primaryExtraLight',
-        'secondaryPure',
-        'secondaryMedium',
-        'secondaryLight',
-        'feedbackDanger',
-        'feedbackSuccess',
-        'feedbackInfo',
-        'feedbackWarning',
-        'feedbackAlert',
-        'feedbackDangerLight',
-        'feedbackSuccessLight',
-        'feedbackInfoLight',
-        'feedbackWarningLight',
-        'feedbackAlertLight',
-        'feedbackInfoText',
-      ],
-      control: {
-        type: 'select',
-      },
-    },
-  },
+  argTypes: {},
   decorators: [
     (Story) => {
       return (
