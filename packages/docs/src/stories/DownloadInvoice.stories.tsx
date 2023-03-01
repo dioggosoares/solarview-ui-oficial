@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Alert } from '@solarview-ui/core'
+import { DownloadInvoice } from '@solarview-ui/core'
 
 export default {
   title: 'Layout/Icons',
-  component: Alert,
+  component: DownloadInvoice,
   args: {
     size: 32,
   },
@@ -80,4 +80,4 @@ export default {
   ],
 } as Meta
 
-export const alert: StoryObj = {}
+export const downloadinvoice: StoryObj = {}
