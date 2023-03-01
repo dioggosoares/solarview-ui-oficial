@@ -2,7 +2,8 @@ module.exports = {
   "stories": [
     "../src/pages/Home.stories.mdx", // default page
     "../src/pages/**/*.stories.mdx",
-    "../src/stories/**/*.stories.tsx"
+    "../src/stories/**/*.stories.tsx",
+    "../src/stories/icons/**/*.stories.tsx",
   ],
   "addons": [
     "@storybook/addon-links",
