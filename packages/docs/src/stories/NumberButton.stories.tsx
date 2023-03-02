@@ -7,7 +7,7 @@ import {
 } from '@solarview-ui/core'
 
 export default {
-  title: 'Navigation/Pagination',
+  title: 'Navigation/Pagination/Light Mode',
   component: NumberButton,
   args: {
     children: '1',
