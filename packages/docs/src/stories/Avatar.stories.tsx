@@ -5,8 +5,7 @@ export default {
   title: 'Data Display/Avatar/Light Mode',
   component: Avatar,
   args: {
-    colorScheme: 'primary',
-    typeData: 'image',
+    // typeData: 'image',
   },
   argTypes: {
     colorScheme: {
@@ -37,19 +36,28 @@ export default {
   ],
 } as Meta<AvatarProps>
 
-export const FallBack: StoryObj<AvatarProps> = {
-  args: {
-    src: 'url-de-uma-imagem-que-nao-carrega',
-  },
-}
-
-export const WithImage: StoryObj<AvatarProps> = {
+export const Default: StoryObj<AvatarProps> = {
   args: {
     src: 'https://api-v2.solarview.com.br/storage/images/logos/sma.png',
   },
 }
 
-export const WithText: StoryObj<AvatarProps> = {
+export const FallBackWithIcon: StoryObj<AvatarProps> = {
+  args: {
+    colorScheme: 'primary',
+    src: 'url-de-uma-imagem-que-nao-carrega',
+  },
+}
+
+export const FallBackWithName: StoryObj<AvatarProps> = {
+  args: {
+    colorScheme: 'primary',
+    fallbackType: 'name',
+    name: 'João Silva',
+  },
+}
+
+export const WithLabel: StoryObj<AvatarProps> = {
   args: {
     typeData: 'text',
     children: '10',

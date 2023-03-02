@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps, Text } from '@solarview-ui/core'
 
 export default {
-  title: 'Navigation/Breadcrumb/Light Mode',
+  title: 'Navigation/DateSet/Light Mode',
   component: Button,
   args: {
     children: 'Button',

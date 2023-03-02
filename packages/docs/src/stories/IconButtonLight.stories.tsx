@@ -18,7 +18,7 @@ export default {
       },
     },
     variant: {
-      options: ['pointed', 'rounded', 'left-rounded', 'right-rounded'],
+      options: ['pointed', 'rounded'],
       control: {
         type: 'inline-radio',
       },

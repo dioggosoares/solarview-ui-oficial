@@ -163,6 +163,115 @@ export function Component(){
   );
 };
 ```
+### Usando o componente Avatar
+
+```tsx
+import { Avatar } from "@solarview-ui/core";
+
+export function Component(){
+  return (
+    <div>
+      // o padrão do avatar é receber uma imagem, mas se a imagem passada nao carregar
+      // ou o "src" não for passado ele mostra o fallback
+      <Avatar src="https://api-v2.solarview.com.br/storage/images/logos/sices.png" />
+      // o fallbackType existem 2 tipos, "icon" e "name", o icon seria usado o <User/> ou no
+      // caso do padrão do style guide é usado o <NoImage />
+      // no caso no "name" se voce passar por exemplo "João Silva" o fallback mostra só as iniciais
+      <Avatar fallbackType="name" name="João Silva" />
+      // temos também o typeData, que será "image" ou "text", se passar "text"
+      // ai o avatar será mostrado como uma label que receberá como filho qualquer texto
+      // esse último modo tem caso de uso para mostrar quantas usinas estão unificadas por exemplo
+      <Avatar typeData="text">
+        10
+      </Avatar>
+    </div>
+  );
+};
+```
+
+### Usando o componente IconButtonGroup
+
+```tsx
+import { IconButtonGroup, IconButton } from "@solarview-ui/core";
+
+// IMPORTANTE: esse componente não é mostrado no storybook, o IconButton sim
+
+// esse componente não tem estilização e não deve ter, ele é 100% funcional
+// server para agrupar SOMENTE o botão do tipo IconButton, de forma a deixar
+// o primeiro e o último com bordas arredondadas (padrão proposto no style guide)
+
+export function Component(){
+  return (
+    <div>
+      <IconButtonGroup
+        // a propriedade "orientation" padrão do IconButtonGroup é "horizontal"
+        // se passar como vertical o grupo será alinhado verticalmente
+        orientation="vertical"
+      >
+        // o "size" padrão é "sm", não sendo necessário
+        // ser passado caso esse seja o tamanho necessário
+        // caso contrário voce passar mais 2 opções "md" e "lg"
+        <IconButton size="md">
+          <Share />
+        </IconButton>
+        <IconButton size="md">
+          <Share />
+        </IconButton>
+        <IconButton size="md">
+          <Share />
+        </IconButton>
+        <IconButton size="md">
+          <Share />
+        </IconButton>
+      </IconButtonGroup>
+    </div>
+  );
+};
+```
+
+### Usando o componente ToggleGroup
+
+```tsx
+import { ToggleGroup, ToggleGroupItem } from "@solarview-ui/core";
+
+// IMPORTANTE: esse componente não é mostrado no storybook
+
+// Este componente tem a proposta de ser usado em SOMENTE grupos de 3 buttons
+// Um possível caso de uso seria a contrução de uma barra de ferramentas
+// estilo formatação de documento, como grupo de alinhamento de texto
+// Ex: um grupo de 3 botoes, um TextAlign-Left, TextAlign-Center, TextAlign-Right
+
+export function Component(){
+  return (
+    <div>
+      // o ToggleGroup recebe uma propriedade obrigatória que o "type"
+      // sendo "simple" ou "multiple", se for passado "simple" a funcionalidade toggle
+      // será como um RadioButton ativa um e desativa o anterior
+      // se passar "multiple" funciona como Checkbox
+      // ativando um por um e desativando também
+      <ToggleGroup
+        // a propriedade "orientation" padrão do ToggleGroup é "horizontal"
+        // se passar como vertical o grupo será alinhado verticalmente
+        type="simple"
+        orientation="vertical"
+      >
+        // a propriedade "value" também é obrigatória
+        // ele orienta o botão nas funcionalidades do toggle no "simple" e "multiple"
+        <ToggleGroupItem value="left" size="md">
+          <Share />
+        </ToggleGroupItem>
+        <ToggleGroupItem value="center" size="md">
+          <Share />
+        </ToggleGroupItem>
+        <ToggleGroupItem value="right" size="md">
+          <Share />
+        </ToggleGroupItem>
+      </ToggleGroup>
+    </div>
+  );
+};
+```
+
 ### Usando os tokens de cor
 
 ```tsx
