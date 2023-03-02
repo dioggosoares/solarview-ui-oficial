@@ -39,6 +39,8 @@ npm install @solarview-ui/tokens
 
 Basta importar os componentes necessários e adicioná-los no componente ou na página.
 
+### Usando o componente Modal
+
 ```tsx
 import { Button, Close, Modal, TagIcon, Plus, TextInput, Trash } from "@solarview-ui/core";
 import { colors } from "@solarview-ui/tokens";
@@ -108,6 +110,80 @@ export function Component(){
           Tags
         </Button>
       </Modal>
+    </div>
+  );
+};
+```
+
+### Usando o componente Tabs
+
+```tsx
+import { TabRoot, TabList, TabButton, TabContent, Box } from "@solarview-ui/core";
+
+export function Component(){
+  return (
+    <div>
+      <TabRoot defaultValue="tab1">// o defaultValue diz para o componente qual tab estará ativa ao carregar
+        <TabList>
+          <TabButton value="tab1">
+            <PowerPlant size={20} />
+            Usina
+          </TabButton>
+          <TabButton value="tab2">
+            <Chart size={20} />
+            Dashboard
+          </TabButton>
+          <TabButton value="tab3">
+            <Map size={20} />
+            Mapa
+          </TabButton>
+        </TabList>
+
+        // IMPORTANTE: o TabContent não tem estilização nenhuma (css) então é necessário criar um elemento
+        // e estilizar ele de acordo com a necessidade, (pode ser usado o componente Box) como abaixo
+        <TabContent value="tab1">// tab ativa na propriedade defaultValue
+          <Box
+            // aqui pode usar essa propriedade "css", "style", ou criar uma classe css no arquivo "css" externo
+            css={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '100%',
+              gap: '.75rem',
+              margin: '0 auto',
+            }}
+            color="backgroundGray" // pode definir a cor de fundo (cores dos Tokens), (o padrão é branco)
+            borderStyle="pointed" // tipo dos cantos "pointed" ou "rounded"
+            variant="quaternary" // variante com a cor da borda $neutralExtraLight
+          >
+            // Aqui vai todo o conteúdo
+          </Box>
+        </TabContent>
+        <TabContent value="tab2">
+          <Conteúdo/> // conteúdo dentro da tab
+        </TabContent>
+        <TabContent value="tab3">
+          <Conteúdo/> // conteúdo dentro da tab
+        </TabContent>
+      </TabRoot>
+    </div>
+  );
+};
+```
+### Usando os tokens de cor
+
+```tsx
+import { User } from "@solarview-ui/core";
+import { colors } from "@solarview-ui/tokens";
+
+export function Component(){
+  return (
+    <div>
+      <User 
+        // caso não seja passado um size pra ele o padrão é 16
+        size={20}
+        // passando a cor vermelha para o icone de Usuário
+        color={colors.feedbackDanger}
+      />
     </div>
   );
 };
