@@ -1,35 +1,26 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps, Text } from '@solarview-ui/core'
+import { ProgressProps, Progress } from '@solarview-ui/core'
 
 export default {
-  title: 'Progress Indicators/Progress Bar/Light Mode',
-  component: Button,
+  title: 'Progress Indicators/Progress/Light Mode',
+  component: Progress,
   args: {
-    children: 'Button',
-    variant: 'primary',
-    size: 'md',
-    disabled: false,
+    colorScheme: 'primaryMedium',
+    size: 40,
+    shrink: false,
+    speed: 'walk',
   },
   argTypes: {
-    variant: {
-      options: ['primary', 'secondary', 'tertiary'],
+    speed: {
+      options: ['snail', 'walk', 'run', 'bolt'],
       control: {
         type: 'inline-radio',
       },
     },
-    size: {
-      options: ['sm', 'md', 'lg'],
-      control: {
-        type: 'inline-radio',
-      },
-    },
-    disabled: {
+    shrink: {
       control: {
         type: 'boolean',
       },
-    },
-    onClick: {
-      action: 'click',
     },
   },
   decorators: [
@@ -46,11 +37,24 @@ export default {
             backgroundColor: '#fff',
           }}
         >
-          <Text>Breve</Text>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: '100%',
+              maxWidth: 'max-content',
+              borderRadius: '0.5rem',
+              padding: '6px',
+              backgroundColor: '#ececec',
+            }}
+          >
+            {Story()}
+          </div>
         </div>
       )
     },
   ],
-} as Meta<ButtonProps>
+} as Meta<ProgressProps>
 
-export const ProgressBar: StoryObj<ButtonProps> = {}
+export const progress: StoryObj<ProgressProps> = {}
